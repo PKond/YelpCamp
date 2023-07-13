@@ -59,6 +59,7 @@ const seedDB = async () => {
         const imgsSeed = Math.floor(Math.random() * imgs.length);
         // seed data into campgrounds collection
         const camp = new Campground({
+            author: '64aab3acb13bf3dd239af4f8',
             image: `https://source.unsplash.com/random/1200x600?camping,${i}`,
             title: `${descriptors[descriptorsSeed]} ${places[placeSeed]}`,
             location: `${cities[citySeed].city}, ${cities[citySeed].state}`,
